@@ -1,5 +1,5 @@
 import Colors from "@/constants/Colors";
-import { StyleSheet } from "react-native";
+import { FlatList, StyleSheet } from "react-native";
 
 // import EditScreenInfo from "@/src/components/EditScreenInfo";
 import { View } from "@components/Themed";
@@ -8,10 +8,13 @@ import products from "@assets/data/products";
 
 export default function MenuScreen() {
   return (
-    <View style={styles.container}>
-      <ProductListItem product={products[0]} />
-      <ProductListItem product={products[1]} />
-    </View>
+    <FlatList
+      data={products}
+      renderItem={({ item }) => <ProductListItem product={item} />}
+      numColumns={2}
+      contentContainerStyle={{ gap: 10, padding: 10 }}
+      columnWrapperStyle={{ gap: 10 }}
+    />
   );
 }
 
