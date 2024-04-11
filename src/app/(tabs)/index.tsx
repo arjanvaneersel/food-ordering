@@ -1,10 +1,10 @@
-import Colors from "@/src/constants/Colors";
+import Colors from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 // import EditScreenInfo from "@/src/components/EditScreenInfo";
-import { Text, View } from "@/src/components/Themed";
-import ProductListItem from "@/src/components/ProductListItem";
-import products from "@/assets/data/products";
+import { View } from "@components/Themed";
+import ProductListItem from "@components/ProductListItem";
+import products from "@assets/data/products";
 
 export default function MenuScreen() {
   return (

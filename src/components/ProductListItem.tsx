@@ -1,5 +1,5 @@
 import { StyleSheet, Image } from "react-native";
-import { Text, View } from "@/src/components/Themed";
+import { Text, View } from "@components/Themed";
 import Colors from "../constants/Colors";
 import { Product } from "@/types";
 
